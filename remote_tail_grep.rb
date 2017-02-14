@@ -1,8 +1,8 @@
 require 'net/ssh'
 
-response_log = "/opt/logs/globosatplay/nginx-fe/nginx-fe_response.log"
-access_log = "/opt/logs/globosatplay/nginx-fe/nginx-fe_access.log"
-host = "globosatplay-qa-fe-01"
+response_log = "/path/to/response_file.log"
+access_log = "/path/to/access_file.log"
+host = "host"
 
 def do_tail(session,file)
   session.open_channel do |channel|
